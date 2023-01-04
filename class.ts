@@ -1,7 +1,10 @@
-class EmployeeInfo {
+import { Login, User } from './interface';
+
+class EmployeeInfo{
     id!: number;
     name!: string;
     surname!: string;
+
 }
 
 let Roma = new EmployeeInfo();
@@ -12,10 +15,13 @@ Roma.surname = "Romashka";
 
 console.log(Roma);
 
-class EmployeeInfo2 {
+class EmployeeInfo2  implements Login{
     #id: number; // # means private
     name: string;
     surname: string;
+    set empID(id : number){
+        this.#id = id;
+    }
     get empID() : number{
         return this.#id;
     }
@@ -26,6 +32,9 @@ class EmployeeInfo2 {
     }
     getNameWithSurname() : string{
         return `${this.name} and ${this.surname}`;
+    }
+    login(): User{
+        return { name: "Roma", id: 10, nick:"Romashka", email:""};
     }
 }
 
