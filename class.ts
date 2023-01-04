@@ -16,6 +16,9 @@ class EmployeeInfo2 {
     #id: number; // # means private
     name: string;
     surname: string;
+    get empID() : number{
+        return this.#id;
+    }
     constructor(id: number, name: string, surname: string){
         this.#id = id;
         this.name = name;
@@ -29,4 +32,5 @@ class EmployeeInfo2 {
 let Romashka = new EmployeeInfo2(2, "Romashka", "A.");
 
 console.log(Romashka);
+console.log(Romashka.empID);
 console.log(Romashka.getNameWithSurname());
