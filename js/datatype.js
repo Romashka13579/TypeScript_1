@@ -26,3 +26,4 @@ swapNumbs[1];
 let empty;
 empty = "11";
 empty = 11;
+//# sourceMappingURL=datatype.js.map

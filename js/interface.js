@@ -22,3 +22,11 @@ let [user1, user2, ...other] = [
     { name: "Arom", id: 4, nick: "Romashka4", email: "" }
 ];
 console.log(user1, user2, other);
+// let result = other.filter(user => user.id < 4);
+// @Component({});
+class Component {
+    constructor(name) {
+        this.name = name;
+    }
+}
+//# sourceMappingURL=interface.js.map

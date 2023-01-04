@@ -44,3 +44,4 @@ let Romashka = new EmployeeInfo2(2, "Romashka", "A.");
 console.log(Romashka);
 console.log(Romashka.empID);
 console.log(Romashka.getNameWithSurname());
+//# sourceMappingURL=class.js.map

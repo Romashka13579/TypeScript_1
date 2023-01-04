@@ -52,4 +52,9 @@ let [user1, user2, ...other]: User[] = [
 
 console.log(user1, user2, other);
 
-let result = other.filter(user => user.id < 4);
+// let result = other.filter(user => user.id < 4);
+
+// @Component({});
+class Component {
+    constructor(public name: string) {}
+}

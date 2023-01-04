@@ -14,3 +14,4 @@ function getItems(items) {
 }
 let resultsN = getItems([1, 2, 3, 4, 5]);
 let resultsS = getItems(["a", "b", "c", "d", "e"]);
+//# sourceMappingURL=function.js.map
